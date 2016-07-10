@@ -24,7 +24,7 @@ public class LogoutAction extends HttpServlet
 
 		if(session!=null)
 		{
-			//session.invalidate();
+			
 			System.out.println("session destoyed");
 		}
 		else
