@@ -25,7 +25,7 @@ public class RegistrationAction extends HttpServlet
 	{
 		try
 		{
-		RegistrationBean registrationBean=new RegistrationBean();
+		
 
 		registrationBean.setLoginName(request.getParameter("loginname"));
 		registrationBean.setPassword(request.getParameter("password"));
