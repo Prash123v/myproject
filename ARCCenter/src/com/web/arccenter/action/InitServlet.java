@@ -14,6 +14,32 @@ public class InitServlet extends HttpServlet
 {
 	MySqlHelper setpro;
 
+	
+	public void init(ServletConfig sc)
+	{
+		ServletContext ctx = sc.getServletContext();
+		InputStream fis = ctx.getResourceAsStream(sc.getInitParameter("config"));
+		Properties props = new Properties();
+		
+		
+		
+		
+		
+		
+		
+		try
+		{
+			props.load(fis);
+		}
+		catch (IOException ioe)
+		{
+			ioe.printStackTrace();
+		}
+		setpro = new MySqlHelper();
+		setpro.setProperties(props);
+		System.out.println("InitServlet called");
+	}
+	
 	public void init(ServletConfig sc)
 	{
 		ServletContext ctx = sc.getServletContext();
