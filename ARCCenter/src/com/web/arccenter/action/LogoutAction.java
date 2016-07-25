@@ -11,12 +11,7 @@ import javax.servlet.http.HttpSession;
 @SuppressWarnings("serial")
 public class LogoutAction extends HttpServlet
 {
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-	throws ServletException, IOException 
-	{
-		doPost(request, response);
-	}
-
+	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 	throws ServletException, IOException 
 	{		
@@ -33,5 +28,13 @@ public class LogoutAction extends HttpServlet
 			System.out.println("Error in session destoye");
 			response.sendRedirect("home.jsp");
 		}
+	}   
+	 
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	throws ServletException, IOException 
+	{
+		doPost(request, response);
 	}
+
+
 }
