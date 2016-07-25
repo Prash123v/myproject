@@ -30,6 +30,10 @@ public class CollegeDetailAction extends HttpServlet
 			
 			System.out.println(request.getParameters());
 			
+			
+			System.out.println("Inside CollegeDetailAction doPost");
+			
+			System.out.println(request.getParameters());
 			HttpSession session = request.getSession(true);
 
 			CollegeDetailBean collegeDetailBean=new CollegeDetailBean();
