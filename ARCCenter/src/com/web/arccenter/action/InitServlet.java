@@ -20,6 +20,12 @@ public class InitServlet extends HttpServlet
 		InputStream fis = ctx.getResourceAsStream(sc.getInitParameter("config"));
 		Properties props = new Properties();
 		
+		
+		
+		
+		
+		
+		
 		try
 		{
 			props.load(fis);
