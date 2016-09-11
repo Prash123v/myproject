@@ -25,3 +25,5 @@ public class LoginBean
 		this.password = password;
 	}
 }
+
+}
