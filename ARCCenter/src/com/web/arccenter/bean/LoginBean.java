@@ -4,7 +4,14 @@ public class LoginBean
 {
 	private String username;
 	private String password;
+	private String login;
 	
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
 	public String getUsername() {
 		return username;
 	}
